@@ -39,12 +39,12 @@ jobs:
           channel: stable
           flutter-version: 3.22.0
       - name: Build Flutter
-        working-directory: './packages/infosite'
+        working-directory: './apps/infosite'
         run: flutter build web --web-renderer canvaskit --release 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with: 
-          path: './packages/infosite/build/web'
+          path: './apps/infosite/build/web'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
