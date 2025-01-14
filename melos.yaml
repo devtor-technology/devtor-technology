@@ -1,0 +1,4 @@
+name: devtor_technology
+
+packages:
+  - apps/**
